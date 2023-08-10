@@ -1,0 +1,11 @@
+<div class="card" *ngIf="project">
+    <img src="{{project.imageUrl || './assets/user.png'}}" alt="Girl in a jacket" class="card-image">
+    <div class="card-content">
+        <h4 class="card-title">{{project.title}}</h4>
+        <p class="card-description">{{project.shortDescription}}</p>
+        <!--<p class="card-skills">Unity, C#</p>-->
+        <div class="button-container">
+            <a routerLink="/projects/{{project.id}}" class="button">View</a>
+        </div>
+    </div>
+</div>

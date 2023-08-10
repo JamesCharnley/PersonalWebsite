@@ -1,0 +1,128 @@
+body{
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	height: 100%;
+	background-color: #1A1919;
+}
+nav {
+	display: block;
+	background-color: black;
+	height: 70px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: left;
+    font-size: large;
+}
+
+nav ul li {
+    display: list-item;
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: black;
+    background-color: black;
+}
+nav ul li a {
+    text-decoration: none;
+    background-color: black;
+    color: ghostwhite;
+}
+nav ul li a img{
+    text-decoration: none;
+    background-color: black;
+}
+#main{
+    width: 100%;
+    
+    background-color: #1A1919;
+}
+#list{
+    width: 75%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #0F0E0E;
+}
+@media screen and (max-width: 700px) {
+    
+#list{
+    width: 95%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #0F0E0E;
+}
+}
+.details-section{
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-image{
+    width: 100%;
+    height: auto;
+}
+
+#title{
+    color: ghostwhite;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: xx-large;
+}
+iframe{
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+p{
+    color: ghostwhite;
+}
+h3{
+    color: ghostwhite;
+}
+li{
+    color: ghostwhite;
+}
+
+.button-container{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    border-style: solid;
+    border-color: ghostwhite;
+    border-width: 2px;
+    border-radius: 5px;
+}

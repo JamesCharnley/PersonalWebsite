@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cascadia-code');
+
+#game-line
+{
+    height: 1px;
+    width: 100%;
+    border: none;
+    border-bottom: solid;
+    border-color: ghostwhite;
+    opacity: 0;
+    position: absolute;
+}
+
+#title-box
+{
+    padding: 30px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-width: 2.5px;
+    /*border-style: dashed;
+    border-color: ghostwhite;
+    border-radius: 2px;*/
+}
+h1, h2{
+	margin: 0;
+	padding: 0;
+	border-color: transparent;
+}
+
+.start-button-container
+{
+    width: 300px;
+    height: 75px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: ghostwhite;
+}
+#start-button
+{
+
+    width: 300px;
+    height: 80px;
+    margin-top: 40px;
+    font-size: 70px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: ghostwhite;
+    background-color: transparent;
+    border:  none;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: ghostwhite;
+
+
+}
+@media screen and (max-width: 700px) {
+    .start-button-container
+{
+    width: 100px;
+    height: 25px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: ghostwhite;
+}
+#start-button
+{
+
+    width: 100px;
+    height: 27px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: ghostwhite;
+    background-color: transparent;
+    border:  none;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: ghostwhite;
+
+
+}
+}
+#start-button:hover {
+      background-color: ghostwhite;
+      color: black;
+      opacity: 0.75;
+      transition: 0.7s;
+  }
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: #1A1919;
+}
+@media screen and (min-width: 700px) {
+    header {
+	white-space: nowrap;
+	overflow: hidden;
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    font-family: "Lucida Console", "Courier New", monospace;
+    border-color: transparent;
+	}
+}
+@media screen and (max-width: 700px) {
+    header {
+	white-space: nowrap;
+	overflow: hidden;
+    text-align: center;
+    color: white;
+    font-size: medium;
+    font-family: "Lucida Console", "Courier New", monospace;
+    border-color: transparent;
+	}
+    #left-control{
+        position: absolute;
+        background-color: transparent;
+        border-color: transparent;
+    }
+    #right-control{
+        position: absolute;
+        background-color: transparent;
+        border-color: transparent;
+    }
+    #shoot-control{
+        position: absolute;
+        background-color: transparent;
+    }
+    .control-image{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+nav {
+	display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+li {
+    display: list-item;
+    
+}
+
+nav ul li {
+    margin: 0 10px;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 700px) {
+    nav ul li a {
+    text-decoration: none;
+    color: ghostwhite;
+    opacity: 0;
+    font-size: larger;
+    animation: fade 4s forwards;
+    animation-delay: 3s;
+    }
+}
+@media screen and (max-width: 700px) {
+    nav ul li a {
+    text-decoration: none;
+    color: ghostwhite;
+    opacity: 0;
+    font-size: medium;
+    animation: fade 4s forwards;
+    animation-delay: 3s;
+    }
+}
+#name {
+	margin-bottom: 10px;
+}
+
+.typed-out {
+  overflow: hidden;
+  border-right: .15em solid ghostwhite;
+  border-color: transparent;
+  width: 0;
+  animation: typing 1.5s steps(20, end) forwards, blink .8s infinite;
+}
+.typed-out2 {
+  overflow: hidden;
+  border-right: .15em solid ghostwhite;
+  border-color: transparent;
+  width: 0;
+  animation: typing 1.0s steps(20, end) forwards, blink .8s infinite;
+  animation-delay: 1.5s;
+}
+
+.button-container{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    border-style: solid;
+    border-color: ghostwhite;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  from { border-color: transparent }
+  to { border-color: ghostwhite }
+}
+@keyframes fade {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+@keyframes transition-black
+{
+  from {background-color: #1A1919 }
+  to {background-color: black }
+}
+@keyframes transition-black-back
+{
+  from {background-color: black }
+  to {background-color: #1A1919 }
+}
