@@ -9,5 +9,5 @@ export interface Project {
     longDescription: string;
     developmentDescription: string;
     externalUrl: string;
-    contributions: ProjectContribution[];
+    contributions: string[];
 }
