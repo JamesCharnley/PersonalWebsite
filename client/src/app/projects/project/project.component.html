@@ -3,8 +3,7 @@
         <h1 id="title">{{project.title}}</h1>
 
         <img class="main-image" src="{{project.imageUrl || './assets/user.png'}}" alt="Girl in a jacket">
-        <iframe *ngIf="project.videoUrl"
-            src="https://www.youtube.com/embed/1ouDMGMvD_Q">
+        <iframe *ngIf="project.videoUrl" src="{{project.videoUrl}}">
         </iframe>
 
         <div class="details-section">
