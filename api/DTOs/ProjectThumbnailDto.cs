@@ -7,5 +7,6 @@ namespace api.DTOs
         public string ImageUrl { get; set; }
         public string Title { get; set; }
         public string ShortDescription { get; set; }
+        public string Skills {get; set;}
     }
 }

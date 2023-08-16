@@ -16,5 +16,6 @@ namespace api.Entities
         public string DevelopmentDescription { get; set; }
         public string ExternalUrl { get; set; }
         public List<ProjectContribution> Contributions { get; set; } = new();
+        public string Skills {get; set;}
     }
 }

@@ -16,5 +16,6 @@ namespace api.DTOs
         public string DevelopmentDescription { get; set; }
         public string ExternalUrl { get; set; }
         public List<ProjectContributionDto> Contributions { get; set; } = new();
+        public string Skills {get; set;}
     }
 }

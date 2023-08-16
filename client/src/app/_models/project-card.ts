@@ -3,4 +3,5 @@ export interface ProjectCard {
     imageUrl: string;
     title: string;
     shortDescription: string;
+    skills: string
 }
