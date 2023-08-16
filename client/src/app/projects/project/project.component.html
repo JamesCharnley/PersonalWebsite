@@ -15,15 +15,15 @@
         <h3 id="development-title">Development</h3>
         <p id="development-paragraph">{{project.developmentDescription}}</p>
 
-        <h3 id="contributions-title">Contributions</h3>
+        <h3 id="contributions-title" *ngIf="project.contributions.length > 0">Contributions</h3>
         <ul id="contributions-list">
             <li *ngFor="let contribution of project.contributions">
                 <p>{{contribution.contribution}}</p>	
             </li>
         </ul>
     </div>
-        <div class="button-container">
-            <a class="button" href="{{project.externalUrl}}">Itch.io</a>
+        <div class="button-container" *ngIf="project.externalUrl">
+            <a class="button" href="{{project.externalUrl}}">{{urlName}}</a>
         </div>
 
     </div>
