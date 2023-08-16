@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Project } from 'src/app/_models/project';
 import { ProjectsService } from 'src/app/_services/projects.service';
+import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-project',
@@ -12,7 +13,7 @@ export class ProjectComponent implements OnInit {
 
   project: Project | undefined;
   
-  constructor(private projectServices: ProjectsService, private route: ActivatedRoute) { }
+  constructor(private projectServices: ProjectsService, private route: ActivatedRoute, private sanitizerService: DomSanitizer) { }
 
   ngOnInit(): void {
     this.loadProject();
@@ -27,6 +28,13 @@ export class ProjectComponent implements OnInit {
     this.projectServices.getProject(projectId).subscribe({
       next: project => this.project = project
     })
+  }
+
+  videoURL(){
+    if(this.project)
+    return this.sanitizerService.bypassSecurityTrustResourceUrl(this.project.videoUrl);
+    else
+    return undefined;
   }
 
 }

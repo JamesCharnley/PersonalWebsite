@@ -3,9 +3,10 @@
         <h1 id="title">{{project.title}}</h1>
 
         <img class="main-image" src="{{project.imageUrl || './assets/user.png'}}" alt="Girl in a jacket">
-        <iframe *ngIf="project.videoUrl" src="{{project.videoUrl}}">
+        <div class="video_container" *ngIf="project.videoUrl">
+        <iframe [src]='videoURL()'>
         </iframe>
-
+        </div>
         <div class="details-section">
         <h3 class="description-title">Description</h3>
         <p id="description-paragraph">{{project.longDescription}}</p>

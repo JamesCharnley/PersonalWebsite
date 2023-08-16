@@ -89,6 +89,10 @@ nav ul li a img{
     text-align: center;
     font-size: xx-large;
 }
+.video-container{
+    width: 100%;
+    height: auto;
+}
 iframe{
     aspect-ratio: 16/9;
     width: 100%;
